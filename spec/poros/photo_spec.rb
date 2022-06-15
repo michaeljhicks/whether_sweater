@@ -1,9 +1,9 @@
 require 'rails_helper'
 
 RSpec.describe Photo do
-  let(:photo) { UnsplashFacade.location_photo('denver') }
-
   it 'has attributes', :vcr do 
+    photo = UnsplashFacade.location_photo('denver')
+
     expect(photo.id).to eq(nil)
     expect(photo.image).to be_a(Hash)
     expect(photo.image).to have_key(:location)

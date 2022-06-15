@@ -1,13 +1,13 @@
 Rails.application.routes.draw do
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
 
-  # Defines the root path route ("/")
-  # root "articles#index"
-
-  namespace :api do
+  namespace :api do 
     namespace :v1 do 
       resources :forecast, only: %i[index]
       resources :backgrounds, only: %i[index]
-    end 
-  end 
+      resources :users, only: %i[create]
+      resources :sessions, only: %i[create]
+      resources :road_trip, only: %i[create]
+    end
+  end
 end
