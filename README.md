@@ -1,4 +1,4 @@
-# Sweater Weather
+# Whether Sweater 
 
 ![languages](https://img.shields.io/github/languages/top/michaeljhicks/whether_sweater?color=red)
 ![rspec](https://img.shields.io/gem/v/rspec?color=blue&label=rspec)
@@ -8,7 +8,7 @@
 
 ## Description 
 
-Sweater Weather is a BE application that is designed to return desired weather conditions for a specific area. The current weather, a five day forecast, and a 48 hour forecast are all available. Directions from one location to another are also available. By combining the two, Sweater Weather is able to geocode a destination location based on its name, find the route to that destination, and also return what the current weather conditions will be upon arrival of the desired destination. Sweater weather consumes data from an active weather API, an active mapquest API, and the Unsplash photo API. By creating endpoints in a new API, Sweater Weather is able to serialize, and send data to the FE application.
+Sweater Weather is a BE application that is designed to return desired weather conditions for a specific area. The current weather, a five day forecast, and a 48 hour forecast are all available. Directions from one location to another are also available. By combining the two, Sweater Weather is able to geocode a destination location based on its name, find the route to that destination, and also return what the current weather conditions will be upon arrival of the desired destination. Sweater weather consumes data from an active weather API, an active mapquest API, and the Unsplash photo API. By creating endpoints in a new API, Whether Sweater is able to serialize, and send data to the FE team, ssatisfying their needs for their application.
 
 ## APIs Used 
 
@@ -28,11 +28,11 @@ Sweater Weather is a BE application that is designed to return desired weather c
 
 ## Versions
 - Ruby 2.7.2
-- Rails 5.2.6
+- Rails 7.0.3
 
 ## Gems
 ```ruby 
-  #Global Scope Gems 
+  #Global Scope 
   gem 'bcrypt', '~> 3.1.7'
   gem 'faraday'
   gem 'jsonapi-serializer'
@@ -70,11 +70,11 @@ Sweater Weather is a BE application that is designed to return desired weather c
 
 1. Fork & Clone the repo 
 ```shell
-$ git clone git@github.com:JCNapier/sweater_weather.git
+$ git clone git@github.com:michaeljhicks/whether_sweater.git
 ```
 2. Navigate to the directory 
 ```shell 
-$ cd sweater_weather
+$ cd whether_sweater
 ```
 3. Install gem packages:
 ```shell
@@ -86,41 +86,48 @@ $ bundle update
 ```
 5. Run the migrations: 
 ```shell
-$ rake db:{drop,create,migrate,seed}
+$ rails db:{drop,create,migrate,seed}
 ```
 
 ## Test Suite 
 
-To properly run the test suite you will need to follow these instructions, and run the following commands in terminal: 
+To properly run the test suite, you will need to follow the below instructions and run the following commands in terminal: 
 
-1. Navigate to all three API websites, and request a new API key for each of the APIs so you can properly access the data. 
-2. Once you have the and API key for each necesssary API, navigate to the ```/config/application.yml``` file. The path is ```/config/application.yml```
-3. If you do not see an ```/config/application.yml``` file run the command ```shell bundle exec figaro install``` In the terminal. The ```/config/application.yml``` should appear. 
+1. Navigate to the above mentioned API websites (three in total) and request a developer API key for each of the respective APIs. This allows you to access the data properly.
+2. Upon having been granted all required API keys and navigate to the ```whether_sweather/config/application.yml``` file. 
+3. If you are unable to locate the ```/config/application.yml``` file in your IDE, run the command ```shell bundle exec figaro install``` In the terminal. The ```/config/application.yml``` should appear. If you are still having problems, please references the Figaro documentation as shown below. 
 4. Add your API keys in this format at the bottom of the ```ruby/config/application.yml``` file: 
-  - ```map_key: 'api_key'```
-  - ```weather_key: 'api_key'```
-  - ```photo_key: 'api_key'```
-5. Once you have the API keys in place, you can run the entire test suite! To do this simply run the command ```shell bundle exec rspec```
-6. You will notice the first time the test suite is run it is slow. This is because of VCR. VCR records the API response and stores it in a cassette to keep API rate limits low, and optimize the test suite performance. 
+  - ```mapquest_api_key: 'api_key'```
+  - ```weather_api_key: 'api_key'```
+  - ```unsplash_api_key: 'api_key'```
+5. Once you have the API keys in place, you can run the entire test suite! To do this simply run the command ```bundle exec rspec```
+6. Upon executing the initial test suite, you will notice it's running at a concerningly glacial pace. This is because of of the suite actually hitting the real API endpoints. However thanks to VCR, this initial run is the only slower execution whereby VCR records the API response on first execution, and then stores the responses in a file known as a 'cassette' to reduce API rate limits, thus optimizing the test suite performance. 
 
 - [VCR Docs](https://github.com/vcr/vcr)
 - [Figaro Docs](https://github.com/laserlemon/figaro)
 
-## End Points Created
+## Created End Points 
 - ``` GET /api/v1/forecast?location=denver,co```
 - ``` GET /api/v1backgrounds?location=denver,co```
 - ``` POST /api/v1/users``` 
-  *JSON Params Passed for User create* 
-  ![Screen Shot 2022-03-09 at 12 45 30 AM](https://user-images.githubusercontent.com/81737385/157395634-45693079-1544-4e9e-8d3e-ddb6aa5f2de3.png)
+  *JSON Params Passed for User create*
+<img width="440" alt="Screen Shot 2022-06-15 at 8 05 35 AM" src="https://user-images.githubusercontent.com/77861247/173847239-01f4598f-ba54-4e35-b1f8-3e88a7dba3bd.png">
+ 
+  
 - ``` POST /api/v1/sessions``` 
   *JSON Params Passed for User login/Session Creation* 
-  ![Screen Shot 2022-03-09 at 12 49 21 AM](https://user-images.githubusercontent.com/81737385/157396212-2fb52f09-5a54-4522-9550-757ab9b7636c.png)
+ * key: email value: your_email@here
+ * key: password value: 'Password123"
+ * key: password_confirmation value: 'Password123' 
+
 - ``` POST /api/v1/road_trip``` 
-  *JSON Params Passed for Road Trip Creation
-  ![Screen Shot 2022-03-09 at 12 51 10 AM](https://user-images.githubusercontent.com/81737385/157396510-16969130-40d2-4ef7-b769-8d0669d74c41.png)
+- *JSON Params Passed for Road Trip Creation
+* key: origin value:Denver,CO
+* key: destination value: Pueblo,CO
+* key: api_key value: "your api key here"
   
-## End Points Exposed 
-  **All string interpolated values are dynamic values being passed in the code as query params. The param "imperial" on the weather API is the desired form of         measurement. API is metric by defualt. End Points are as they appear in the API services in the code.**
+## Exposed End Points 
+  **All string interpolated values are dynamic values being passed in the code as query params. The param "imperial" on the weather API is the preferred form of         measurement. API is metric by defualt. End Points are as they appear in the API services in the code.**
   
 - ``` GET http://www.mapquestapi.com/geocoding/v1/address?location=#{location}```
 - ``` GET http://www.mapquestapi.com/directions/v2/route?from=#{trip_params[:from]}&to=#{trip_params[:to]}```
@@ -128,12 +135,13 @@ To properly run the test suite you will need to follow these instructions, and r
 - ``` GET https://api.unsplash.com/search/photos?page=1&query=#{city}")```
 
 ## Schema 
-![Screen Shot 2022-03-09 at 10 57 25 AM](https://user-images.githubusercontent.com/81737385/157502279-15ecea78-60dd-474c-99d4-3be684ececbb.png)
+<img width="613" alt="Screen Shot 2022-06-15 at 8 18 41 AM" src="https://user-images.githubusercontent.com/77861247/173850159-62b86bde-f51e-450a-8bca-d0399c90afc4.png">
+
 
 ## Project Contributors
 
-<a href="https://github.com/JCNapier/sweater_weather/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=JCNapier/sweater_weather" />
+<a href="https://github.com/michaeljhicks/whether_sweater/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=michaeljhicks/whether_sweater" />
 </a>
 
 
