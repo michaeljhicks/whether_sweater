@@ -111,7 +111,9 @@ To properly run the test suite, you will need to follow the below instructions a
 - ``` GET /api/v1backgrounds?location=denver,co```
 - ``` POST /api/v1/users``` 
   *JSON Params Passed for User create*
-<img width="440" alt="Screen Shot 2022-06-15 at 8 05 35 AM" src="https://user-images.githubusercontent.com/77861247/173847239-01f4598f-ba54-4e35-b1f8-3e88a7dba3bd.png">
+ * key: email value: your_email@here
+ * key: password value: password
+ * key: password_confirmation value: password
  
   
 - ``` POST /api/v1/sessions``` 
