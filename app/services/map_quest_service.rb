@@ -11,4 +11,9 @@ class MapQuestService
     JSON.parse(response.body, symbolize_names: true)
   end
 
+  def self.directions(trip_params)
+    response = conn.get("/directions/v2/route?from=#{trip_params[:from]}&to=#{trip_params[:to]}")
+
+    JSON.parse(response.body, symbolize_names: true)
+  end
 end 
