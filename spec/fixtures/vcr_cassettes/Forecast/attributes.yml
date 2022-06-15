@@ -2,7 +2,7 @@
 http_interactions:
 - request:
     method: get
-    uri: http://www.mapquestapi.com/geocoding/v1/address?key=OEAALh9btOyDp5UyrRY5Lk6qdsJMZaXq&location=denver,Co
+    uri: http://www.mapquestapi.com/geocoding/v1/address?key=OEAALh9btOyDp5UyrRY5Lk6qdsJMZaXq&location=Denver,CO
     body:
       encoding: US-ASCII
       string: ''
@@ -19,7 +19,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Tue, 14 Jun 2022 22:52:15 GMT
+      - Tue, 14 Jun 2022 22:52:10 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
@@ -35,13 +35,13 @@ http_interactions:
       Geocodetransactioncount:
       - '1'
       Last-Modified:
-      - Tue, 14 Jun 2022 22:52:15 GMT
+      - Tue, 14 Jun 2022 22:52:10 GMT
       Pragma:
       - no-cache
       Reversegeocodetransactioncount:
       - '0'
       Set-Cookie:
-      - JSESSIONID=3B58DD79080342F320B27647336BC903; Path=/; HttpOnly
+      - JSESSIONID=BE2AF19B6A463BE77BFAFC8CBE7D5E8E; Path=/; HttpOnly
       Status:
       - success
       Transactionweight:
@@ -50,10 +50,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2022 MapQuest,
         Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
-        2022 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"denver,Co"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Denver","adminArea5Type":"City","adminArea4":"Denver
-        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282041090","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=OEAALh9btOyDp5UyrRY5Lk6qdsJMZaXq&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-1&scalebar=true&zoom=12&rand=1187294296"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"","adminArea5Type":"City","adminArea4":"Denver
-        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A4XAX","geocodeQuality":"COUNTY","dragPoint":false,"sideOfStreet":"N","linkId":"282932003","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=OEAALh9btOyDp5UyrRY5Lk6qdsJMZaXq&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-2&scalebar=true&zoom=9&rand=598901872"}]}]}'
-  recorded_at: Tue, 14 Jun 2022 22:52:15 GMT
+        2022 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"Denver,CO"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Denver","adminArea5Type":"City","adminArea4":"Denver
+        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282041090","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=OEAALh9btOyDp5UyrRY5Lk6qdsJMZaXq&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-2092410004"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"","adminArea5Type":"City","adminArea4":"Denver
+        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A4XAX","geocodeQuality":"COUNTY","dragPoint":false,"sideOfStreet":"N","linkId":"282932003","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=OEAALh9btOyDp5UyrRY5Lk6qdsJMZaXq&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-2&scalebar=true&zoom=9&rand=54367156"}]}]}'
+  recorded_at: Tue, 14 Jun 2022 22:52:10 GMT
 - request:
     method: get
     uri: https://api.openweathermap.org/data/2.5/onecall?appid=ac7dd56b297de621d02078abaf70f4c1&lat=39.738453&lon=-104.984853&units=imperial
@@ -75,7 +75,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Tue, 14 Jun 2022 22:52:16 GMT
+      - Tue, 14 Jun 2022 22:52:11 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -150,10 +150,10 @@ http_interactions:
         sky","icon":"01d"}],"clouds":5,"pop":0.23,"uvi":12},{"dt":1655751600,"sunrise":1655724717,"sunset":1655778665,"moonrise":1655708460,"moonset":1655749920,"moon_phase":0.75,"temp":{"day":83.68,"min":65.98,"max":83.68,"night":68.32,"eve":65.98,"morn":69.24},"feels_like":{"day":81.19,"night":67.86,"eve":65.66,"morn":68.27},"pressure":1007,"humidity":23,"dew_point":42.22,"wind_speed":19.13,"wind_deg":287,"wind_gust":21.52,"weather":[{"id":500,"main":"Rain","description":"light
         rain","icon":"10d"}],"clouds":84,"pop":0.55,"rain":3.92,"uvi":12},{"dt":1655838000,"sunrise":1655811128,"sunset":1655865078,"moonrise":1655796360,"moonset":1655840280,"moon_phase":0.77,"temp":{"day":82.87,"min":63.28,"max":88.74,"night":79.07,"eve":88.74,"morn":63.28},"feels_like":{"day":80.26,"night":79.07,"eve":84.94,"morn":61.61},"pressure":1011,"humidity":13,"dew_point":26.19,"wind_speed":10.98,"wind_deg":76,"wind_gust":16.89,"weather":[{"id":800,"main":"Clear","description":"clear
         sky","icon":"01d"}],"clouds":0,"pop":0.32,"uvi":12}]}'
-  recorded_at: Tue, 14 Jun 2022 22:52:16 GMT
+  recorded_at: Tue, 14 Jun 2022 22:52:11 GMT
 - request:
     method: get
-    uri: http://www.mapquestapi.com/geocoding/v1/address?key=OEAALh9btOyDp5UyrRY5Lk6qdsJMZaXq&location=denver,Co
+    uri: http://www.mapquestapi.com/geocoding/v1/address?key=OEAALh9btOyDp5UyrRY5Lk6qdsJMZaXq&location=Denver,CO
     body:
       encoding: US-ASCII
       string: ''
@@ -170,11 +170,11 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Tue, 14 Jun 2022 22:52:16 GMT
+      - Tue, 14 Jun 2022 22:52:11 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
-      - '1734'
+      - '1733'
       Access-Control-Allow-Methods:
       - OPTIONS,GET,POST
       Access-Control-Allow-Origin:
@@ -186,13 +186,13 @@ http_interactions:
       Geocodetransactioncount:
       - '1'
       Last-Modified:
-      - Tue, 14 Jun 2022 22:52:16 GMT
+      - Tue, 14 Jun 2022 22:52:11 GMT
       Pragma:
       - no-cache
       Reversegeocodetransactioncount:
       - '0'
       Set-Cookie:
-      - JSESSIONID=FABD09481743EF66D7BEBC765D940945; Path=/; HttpOnly
+      - JSESSIONID=4404734894B48A0B1EB36948A1BA50F0; Path=/; HttpOnly
       Status:
       - success
       Transactionweight:
@@ -201,10 +201,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2022 MapQuest,
         Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
-        2022 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"denver,Co"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Denver","adminArea5Type":"City","adminArea4":"Denver
-        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282041090","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=OEAALh9btOyDp5UyrRY5Lk6qdsJMZaXq&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-1&scalebar=true&zoom=12&rand=1200431179"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"","adminArea5Type":"City","adminArea4":"Denver
-        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A4XAX","geocodeQuality":"COUNTY","dragPoint":false,"sideOfStreet":"N","linkId":"282932003","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=OEAALh9btOyDp5UyrRY5Lk6qdsJMZaXq&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-2&scalebar=true&zoom=9&rand=1689755263"}]}]}'
-  recorded_at: Tue, 14 Jun 2022 22:52:16 GMT
+        2022 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"Denver,CO"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Denver","adminArea5Type":"City","adminArea4":"Denver
+        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282041090","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=OEAALh9btOyDp5UyrRY5Lk6qdsJMZaXq&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-1&scalebar=true&zoom=12&rand=442461987"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"","adminArea5Type":"City","adminArea4":"Denver
+        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A4XAX","geocodeQuality":"COUNTY","dragPoint":false,"sideOfStreet":"N","linkId":"282932003","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=OEAALh9btOyDp5UyrRY5Lk6qdsJMZaXq&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-2&scalebar=true&zoom=9&rand=1150144844"}]}]}'
+  recorded_at: Tue, 14 Jun 2022 22:52:11 GMT
 - request:
     method: get
     uri: https://api.openweathermap.org/data/2.5/onecall?appid=ac7dd56b297de621d02078abaf70f4c1&lat=39.738453&lon=-104.984853&units=imperial
@@ -226,7 +226,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Tue, 14 Jun 2022 22:52:16 GMT
+      - Tue, 14 Jun 2022 22:52:11 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -301,10 +301,10 @@ http_interactions:
         sky","icon":"01d"}],"clouds":5,"pop":0.23,"uvi":12},{"dt":1655751600,"sunrise":1655724717,"sunset":1655778665,"moonrise":1655708460,"moonset":1655749920,"moon_phase":0.75,"temp":{"day":83.68,"min":65.98,"max":83.68,"night":68.32,"eve":65.98,"morn":69.24},"feels_like":{"day":81.19,"night":67.86,"eve":65.66,"morn":68.27},"pressure":1007,"humidity":23,"dew_point":42.22,"wind_speed":19.13,"wind_deg":287,"wind_gust":21.52,"weather":[{"id":500,"main":"Rain","description":"light
         rain","icon":"10d"}],"clouds":84,"pop":0.55,"rain":3.92,"uvi":12},{"dt":1655838000,"sunrise":1655811128,"sunset":1655865078,"moonrise":1655796360,"moonset":1655840280,"moon_phase":0.77,"temp":{"day":82.87,"min":63.28,"max":88.74,"night":79.07,"eve":88.74,"morn":63.28},"feels_like":{"day":80.26,"night":79.07,"eve":84.94,"morn":61.61},"pressure":1011,"humidity":13,"dew_point":26.19,"wind_speed":10.98,"wind_deg":76,"wind_gust":16.89,"weather":[{"id":800,"main":"Clear","description":"clear
         sky","icon":"01d"}],"clouds":0,"pop":0.32,"uvi":12}]}'
-  recorded_at: Tue, 14 Jun 2022 22:52:16 GMT
+  recorded_at: Tue, 14 Jun 2022 22:52:11 GMT
 - request:
     method: get
-    uri: http://www.mapquestapi.com/geocoding/v1/address?key=OEAALh9btOyDp5UyrRY5Lk6qdsJMZaXq&location=denver,Co
+    uri: http://www.mapquestapi.com/geocoding/v1/address?key=OEAALh9btOyDp5UyrRY5Lk6qdsJMZaXq&location=Denver,CO
     body:
       encoding: US-ASCII
       string: ''
@@ -321,7 +321,7 @@ http_interactions:
       message: ''
     headers:
       Date:
-      - Tue, 14 Jun 2022 22:52:16 GMT
+      - Tue, 14 Jun 2022 22:52:11 GMT
       Content-Type:
       - application/json;charset=UTF-8
       Content-Length:
@@ -337,13 +337,13 @@ http_interactions:
       Geocodetransactioncount:
       - '1'
       Last-Modified:
-      - Tue, 14 Jun 2022 22:52:16 GMT
+      - Tue, 14 Jun 2022 22:52:11 GMT
       Pragma:
       - no-cache
       Reversegeocodetransactioncount:
       - '0'
       Set-Cookie:
-      - JSESSIONID=95EDB363599A83236F0DF20A4C8C4935; Path=/; HttpOnly
+      - JSESSIONID=A2392A74CD0CEA1D69E9F3FB84947817; Path=/; HttpOnly
       Status:
       - success
       Transactionweight:
@@ -352,10 +352,10 @@ http_interactions:
       encoding: UTF-8
       string: '{"info":{"statuscode":0,"copyright":{"text":"\u00A9 2022 MapQuest,
         Inc.","imageUrl":"http://api.mqcdn.com/res/mqlogo.gif","imageAltText":"\u00A9
-        2022 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"denver,Co"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Denver","adminArea5Type":"City","adminArea4":"Denver
-        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282041090","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=OEAALh9btOyDp5UyrRY5Lk6qdsJMZaXq&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-1610245775"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"","adminArea5Type":"City","adminArea4":"Denver
-        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A4XAX","geocodeQuality":"COUNTY","dragPoint":false,"sideOfStreet":"N","linkId":"282932003","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=OEAALh9btOyDp5UyrRY5Lk6qdsJMZaXq&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-2&scalebar=true&zoom=9&rand=1553735008"}]}]}'
-  recorded_at: Tue, 14 Jun 2022 22:52:16 GMT
+        2022 MapQuest, Inc."},"messages":[]},"options":{"maxResults":-1,"thumbMaps":true,"ignoreLatLngInput":false},"results":[{"providedLocation":{"location":"Denver,CO"},"locations":[{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"Denver","adminArea5Type":"City","adminArea4":"Denver
+        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A5XAX","geocodeQuality":"CITY","dragPoint":false,"sideOfStreet":"N","linkId":"282041090","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=OEAALh9btOyDp5UyrRY5Lk6qdsJMZaXq&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-1&scalebar=true&zoom=12&rand=-2131577771"},{"street":"","adminArea6":"","adminArea6Type":"Neighborhood","adminArea5":"","adminArea5Type":"City","adminArea4":"Denver
+        County","adminArea4Type":"County","adminArea3":"CO","adminArea3Type":"State","adminArea1":"US","adminArea1Type":"Country","postalCode":"","geocodeQualityCode":"A4XAX","geocodeQuality":"COUNTY","dragPoint":false,"sideOfStreet":"N","linkId":"282932003","unknownInput":"","type":"s","latLng":{"lat":39.738453,"lng":-104.984853},"displayLatLng":{"lat":39.738453,"lng":-104.984853},"mapUrl":"http://www.mapquestapi.com/staticmap/v5/map?key=OEAALh9btOyDp5UyrRY5Lk6qdsJMZaXq&type=map&size=225,160&locations=39.738453,-104.984853|marker-sm-50318A-2&scalebar=true&zoom=9&rand=-450868856"}]}]}'
+  recorded_at: Tue, 14 Jun 2022 22:52:11 GMT
 - request:
     method: get
     uri: https://api.openweathermap.org/data/2.5/onecall?appid=ac7dd56b297de621d02078abaf70f4c1&lat=39.738453&lon=-104.984853&units=imperial
@@ -377,7 +377,7 @@ http_interactions:
       Server:
       - openresty
       Date:
-      - Tue, 14 Jun 2022 22:52:16 GMT
+      - Tue, 14 Jun 2022 22:52:11 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -452,5 +452,5 @@ http_interactions:
         sky","icon":"01d"}],"clouds":5,"pop":0.23,"uvi":12},{"dt":1655751600,"sunrise":1655724717,"sunset":1655778665,"moonrise":1655708460,"moonset":1655749920,"moon_phase":0.75,"temp":{"day":83.68,"min":65.98,"max":83.68,"night":68.32,"eve":65.98,"morn":69.24},"feels_like":{"day":81.19,"night":67.86,"eve":65.66,"morn":68.27},"pressure":1007,"humidity":23,"dew_point":42.22,"wind_speed":19.13,"wind_deg":287,"wind_gust":21.52,"weather":[{"id":500,"main":"Rain","description":"light
         rain","icon":"10d"}],"clouds":84,"pop":0.55,"rain":3.92,"uvi":12},{"dt":1655838000,"sunrise":1655811128,"sunset":1655865078,"moonrise":1655796360,"moonset":1655840280,"moon_phase":0.77,"temp":{"day":82.87,"min":63.28,"max":88.74,"night":79.07,"eve":88.74,"morn":63.28},"feels_like":{"day":80.26,"night":79.07,"eve":84.94,"morn":61.61},"pressure":1011,"humidity":13,"dew_point":26.19,"wind_speed":10.98,"wind_deg":76,"wind_gust":16.89,"weather":[{"id":800,"main":"Clear","description":"clear
         sky","icon":"01d"}],"clouds":0,"pop":0.32,"uvi":12}]}'
-  recorded_at: Tue, 14 Jun 2022 22:52:17 GMT
+  recorded_at: Tue, 14 Jun 2022 22:52:11 GMT
 recorded_with: VCR 6.1.0
